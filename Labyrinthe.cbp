@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Labyrinthe" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/Labyrinthe" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="include/" />
+		</Compiler>
+		<Linker>
+			<Add library="libcsfml-graphics" />
+			<Add library="libcsfml-system" />
+			<Add library="libcsfml-window" />
+			<Add directory="lib" />
+		</Linker>
+		<Unit filename="Cellule.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Cellule.h" />
+		<Unit filename="Labyrinthe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Labyrinthe.h" />
+		<Unit filename="Personnage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Personnage.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="map.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="map.h" />
+		<Unit filename="prim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="prim.h" />
+		<Unit filename="rec.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="sceneManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sceneManager.h" />
+		<Unit filename="scenes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="scenes.h" />
+		<Unit filename="tiles.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tiles.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
